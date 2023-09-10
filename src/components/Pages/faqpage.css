@@ -1,0 +1,58 @@
+.faqpage .background{
+    background: linear-gradient(104.24deg, #000066 22.75%, #0D6EFD 168.68%);
+
+}
+
+.faqpage .navbar {
+     background-color: transparent;
+    color: #fff;
+}
+
+/* .faqpage{
+    color: #fff;
+} */
+
+
+.faqpage .dropdown .dropdown-toggle{
+    color: #fff;
+}
+
+
+.admin button{
+    color: #fff;
+}
+
+.admin a{
+    color: #000!important;
+}
+
+.faqimage{
+    width: 8rem;
+    position: absolute;
+    top: 0;
+    right: 25%;
+}
+
+@media(max-width:500px){
+    .move-up{
+        margin-bottom: 70px !important;
+        margin-top: 50px !important;
+    }
+
+    .q{
+        margin-left: -20px !important;
+    }
+
+    .faqimage{
+        margin-top: 50px !important;
+        width: 50px;
+        margin-left: 200px !important;
+        
+    }
+
+
+    /* .faqimage{
+        margin-top: -200px !important;
+        display: none;
+    } */
+}
