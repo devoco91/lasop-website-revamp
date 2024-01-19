@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./blog.css"
 import Navbar from '../navbarfiles/Navbar'
 import Footer from '../footerfiles/Footer'
@@ -8,6 +8,10 @@ import Pagination from '../common/Pagination'
 import Subscribe from '../common/Subscribe'
 
 function Blog({blogdata}) {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
 
 

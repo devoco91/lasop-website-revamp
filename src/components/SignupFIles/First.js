@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import "./../Pages/login.css"
 import { AiOutlineEyeInvisible} from "react-icons/ai"
 import { NavLink } from 'reactstrap'
@@ -8,6 +8,10 @@ import { BsArrowRightSquare } from 'react-icons/bs'
 import {toast} from "react-toastify"
 
 function First() {
+
+  useEffect(() => {
+    window.scrollTo(0, 10)
+  }, [])
 
   
 

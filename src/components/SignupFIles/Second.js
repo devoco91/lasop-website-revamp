@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react'
+import React, { useLayoutEffect, useState, useEffect } from 'react'
 import { BsArrowLeftCircle, BsArrowLeftSquare, BsArrowRightCircle, BsArrowRightSquare } from "react-icons/bs"
 import "./../Pages/login.css"
 import { AiOutlineEyeInvisible} from "react-icons/ai"
@@ -10,6 +10,11 @@ import { toast } from 'react-toastify';
 import pdf from "../terms.pdf";
 
 function Second() {
+
+
+  useEffect(() => {
+    window.scrollTo(0, 10)
+  }, [])
   const [loading, setLoading] = useState(false)
     const dispatch = useDispatch()
 

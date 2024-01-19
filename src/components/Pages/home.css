@@ -96,6 +96,26 @@ transform: rotate(90deg);
     }
 
     .lines{
-        margin-bottom: -150px !important;
+        margin-bottom: -50px !important;
     } 
+
+
+    .cardzz{
+        width:300px !important;
+        /* height:500px !important */
+        
+    }
+
+
+    .devoco{
+        height:320px !important
+    }
+
+    .bat{
+        width:150px !important
+    }
+
+    .read{
+        width:200px !important
+    }
 }

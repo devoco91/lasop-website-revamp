@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect } from 'react'
 import First from '../SignupFIles/First'
 import Second from '../SignupFIles/Second'
 import Third from '../SignupFIles/Third'
@@ -10,6 +10,10 @@ import Navbar from './../navbarfiles/Navbar'
 import Footer from './../footerfiles/Footer'
 
 function Onboard() {
+
+  useEffect(() => {
+    window.scrollTo(0, 10)
+  }, [])
 
 
 

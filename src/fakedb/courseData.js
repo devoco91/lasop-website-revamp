@@ -3,9 +3,11 @@ import { GoLocation } from "react-icons/go"
 const data = [
     {   
         id : 0,
+        slug: "product-design",
         dpt1: `Product Design `,
 
         dpt2: "(UI/UX  & PRODUCT LIFECYCLE)",
+        slug: 'productdesign',
         bannerText: `Learn design thinking, wireframes, interactive prototyping, Figma, and more, and
         complete hands-on projects. Learn Essential UX Design Skills Led by Experienced
         Design Leaders UX Designers craft exceptional experiences within digital products,
@@ -20,13 +22,13 @@ const data = [
         bannerBtn:[
             {text: "Ojodu-Berger", icon: <GoLocation/>},
             {text: "6 months"},
-            {text: "Next cohort: Sept 04 2023"},
+            {text: "Next cohort: Feb 10 2024"},
             {text: "Campus"},
             {text: "Online"},
             {text: "Weekdays"},
             {text: "Weekends"},
         ],
-        nextCohort: {date: "Sept 04", time: "9:00AM - 2:00PM WAT"},
+        nextCohort: {date: "Feb 10", time: "9:00AM - 2:00PM WAT"},
         courseInfo:[
             {curr: "UX Research & Strategy", text: "Good user experience design starts with good research and strategy to address user problems. Learn the foundational concepts of Design Thinking and human-centered design, which are critical, early concepts that will inform your work. Learn how to complete effective research and develop user personas based on the insights you’ve gathered. This unit covers the essential foundations of the design process, to ensure you’re setting yourself up for success as you embark on your UX design journey."},
             {curr: "UI Designs Foundation", text: `Beautiful UI solutions are built upon the right framework and mindset. In this unit, develop strong design foundations by familiarizing yourself with common UI elements, best practices, and concepts. \n Learn human-centered design principles and apply your new knowledge to plan intuitive interfaces that resonate with users. Practice creating sketches and translate them into wireframes using Figma – an industry-leading tool used throughout the course.Learn and Apply Design Thinking Perform Effective User Research
@@ -84,8 +86,10 @@ const data = [
     },
     {   
         id : 1,
+        slug: "frontend",
         dpt1: "Frontend",
         dpt2: "Development",
+        slug: 'frontendweb',
         bannerText: `Learn Web Development Skills Live, Led by Experienced Technology Leaders
         Having a strong online presence is essential to nearly every business. In this
         course, learn to create beautiful, responsive websites by mastering the building
@@ -96,11 +100,11 @@ const data = [
             {text: "Weekdays"},
             {text: "weekends"},
             {text: "3 months"},
-            {text: "Next cohort: Sept 04 2023"},
+            {text: "Next cohort: Feb 10 2024"},
             {text: ""},
             {text: ""},
         ],
-        nextCohort: {date: "Sept 04", time: "9:00AM - 2:00PM WAT"},
+        nextCohort: {date: "Feb 10", time: "9:00AM - 2:00PM WAT"},
         courseInfo:[
             {curr: "Markup And HTML", text: "Launch into this course by gaining foundational knowledge of the internet and how developers build websites. You'll get hands-on experience setting up your development environment and writing HTML code, learning critical aspects of syntax and anatomy. Complete your first development challenge and apply everything you've learned so far."},
             {curr: "CSS Visual Styling", text: "Cascading Style Sheets (CSS) is the language that enables Web Developers to modify the appearance of a website with custom styling and advanced layouts. In this unit, learn how to connect CSS files with your HTML files, and start writing CSS code to apply unique styles to your website, including fonts and colors. Learn how to use the cascading logic of CSS and different selectors to precisely style your website."},
@@ -140,8 +144,10 @@ const data = [
 
     {   
         id : 2,
+        slug: "fullstack",
         dpt1: "Fullstack",
         dpt2: "Development",
+        slug: 'fullstackweb',
         bannerText: `Learn to create professional, and responsive web apps using HTML,
         CSS, Bootstrap, JavaScript, JQuery, React, Python, Django & SQL.
         Understand GIT and GITHUBS, APIS and HOSTINGS
@@ -157,7 +163,7 @@ const data = [
             {text: ""},
             {text: ""},
         ],
-        nextCohort: {date: "Sept 04", time: "9:00AM - 2:00PM WAT"},
+        nextCohort: {date: "Feb 10", time: "9:00AM - 2:00PM WAT"},
         courseInfo:[
             {curr: "Markup And HTML", text: "Launch into this course by gaining foundational knowledge of the internet and how developers build websites. You'll get hands-on experience setting up your development environment and writing HTML code, learning critical aspects of syntax and anatomy. Complete your first development challenge and apply everything you've learned so far."},
             {curr: "CSS Visual Styling", text: "Cascading Style Sheets (CSS) is the language that enables Web Developers to modify the appearance of a website with custom styling and advanced layouts. In this unit, learn how to connect CSS files with your HTML files, and start writing CSS code to apply unique styles to your website, including fonts and colors. Learn how to use the cascading logic of CSS and different selectors to precisely style your website."},
@@ -196,19 +202,21 @@ const data = [
     },
     {   
         id : 3,
+        slug: "backend",
         dpt1: "Backend",
         dpt2: "Development",
+        slug: 'backendweb',
         bannerText: "In this course, you will be thought Python, and its fullstack framework Django. If your interested in becoming a Python backend developer or Node and Express .NET if your interest is to become a Nodejs developer.",
         bannerBtn:[
             {text: "Ojodu-Berger", icon: <GoLocation/>},
             {text: "Weekdays"},
             {text: "weekends"},
             {text: "3 months"},
-            {text: "Next cohort: Sept 04 2023"},
+            {text: "Next cohort: Feb 10 2024"},
             {text: ""},
             {text: ""},
         ],
-        nextCohort: {date: "Sept 04", time: "9:00AM - 2:00PM WAT"},
+        nextCohort: {date: "Feb 10", time: "9:00AM - 2:00PM WAT"},
         courseInfo:[
             {curr: "Python", text: "You will learn all the concepts and modules of python programming language."},
             {curr: "Django", text: "Learn how to integrate python codes into your frontend application with the use of python web framework Django."},
@@ -244,8 +252,10 @@ const data = [
     },
     {   
         id : 4,
+        slug: "mobile",
         dpt1: "Mobile App",
         dpt2: "Development",
+        slug: 'mobileappdev',
         bannerText: `In this program, you are going to have access to step-by-step classes with a qualified
         tutor, interactive coding exercises, quizzes, and much more! By the end of this course,
         you will be a full-fledged flutter developer, by mastering things like declarative
@@ -256,11 +266,11 @@ const data = [
             {text: "Weekdays"},
             {text: "weekends"},
             {text: "6 months"},
-            {text: "Next cohort: Sept 04 2023"},
+            {text: "Next cohort: Feb 10 2024"},
             {text: ""},
             {text: ""},
         ],
-        nextCohort: {date: "Sept 04", time: "9:00AM - 2:00PM WAT"},
+        nextCohort: {date: "Feb 10", time: "9:00AM - 2:00PM WAT"},
         courseInfo:[
             {curr: "Learn Flutter", text: "Flutter is use to build iOS apps, Android apps and even Web apps using one Programming Language, DART.So, instead of learning java or kotlin to build android apps and then learn swift or objective c to build iOS apps, you could do it all in one by just using flutter. Our curriculum covers all you need to become a flutter developer. Good news is, even if you are new to flutter or this is the first time of hearing about Mobile App, this course will take you from beginner’s level to becoming a skilled flutter developer. So, what are you waiting for?"},
            
@@ -291,19 +301,21 @@ const data = [
     },
     {   
         id : 5,
+        slug: "data-science",
         dpt1: "Data Science And AI",
         dpt2: "Development",
+        slug: 'datascience',
         bannerText: "LASOP’s Data Science course can be considered an intermediate-level data science course, as it dives into prescriptive and predictive analytics, machine learning, artificial intelligence, statistical analysis, and programming languages.",
         bannerBtn:[
             {text: "Ojodu-Berger", icon: <GoLocation/>},
             {text: "Weekdays"},
             {text: "weekends"},
             {text: "4 months"},
-            {text: "Next cohort: Sept 04 2023"},
+            {text: "Next cohort: Feb 10 2024"},
             {text: ""},
             {text: ""},
         ],
-        nextCohort: {date: "Sept 04", time: "9:00AM - 2:00PM WAT"},
+        nextCohort: {date: "Feb 10", time: "9:00AM - 2:00PM WAT"},
         courseInfo:[
             {curr: "Data Analytics And Foundation", text: "Launch your data analytics journey with an introduction to data by learning foundational concepts and new skills for approaching data problems. You'll start your learning journey by developing a problem-solving framework and by understanding how data should be collected and prepared for data analysis. Translate your learnings into job-ready skills by solving real-world problems with a variety of data sets.Learn Problem-Solving Strategies for High-Value Outputs Source High-Quality Data Master Excel Data Analysis"},
             {curr: "Python And Data Science Foundation", text: "Python programming and Data Science Foundations Python programming has emerged as an essential tool for data science. Launch into the course by learning the Python programming language, and use leading data science packages like NumPy and Pandas. With these tools in place, you’ll complete a variety of hands-on projects with code and learn to query data and perform data manipulation, building a strong foundation for what you’ll learn throughout the rest of the course. Explore Essential Data Science Tools Manage and Analyze Data"},
@@ -341,8 +353,10 @@ const data = [
     },
     {   
         id : 6,
+        slug: "data-analytics",
         dpt1: "Data Analytics",
         dpt2: "Development",
+        slug: 'dataanalytics',
         bannerText: `Data Analytics involves the process of cleaning, changing, and processing raw
         data and extracting actionable & relevant information that helps businesses make
         informed decisions. The procedure helps reduce the risks inherent in decision-making
@@ -353,11 +367,11 @@ const data = [
             {text: "Weekdays"},
             {text: "weekends"},
             {text: "4 months"},
-            {text: "Next cohort: Sept 04 2023"},
+            {text: "Next cohort:Feb 10 2024"},
             {text: ""},
             {text: ""},
         ],
-        nextCohort: {date: "Sept 04", time: "9:00AM - 2:00PM WAT"},
+        nextCohort: {date: "Feb 10", time: "9:00AM - 2:00PM WAT"},
         courseInfo:[
             {curr: "Data Analytics And Foundation", text: "Launch your data analytics journey with an introduction to data by learning foundational concepts and new skills for approaching data problems. You'll start your learning journey by developing a problem-solving framework and by understanding how data should be collected and prepared for data analysis. Translate your learnings into job-ready skills by solving real-world problems with a variety of data sets.Learn Problem-Solving Strategies for High-Value Outputs Source High-Quality Data Master Excel Data Analysis"},
             // {curr: "Python And Data Science Foundation", text: "Python programming and Data Science Foundations Python programming has emerged as an essential tool for data science. Launch into the course by learning the Python programming language, and use leading data science packages like NumPy and Pandas. With these tools in place, you’ll complete a variety of hands-on projects with code and learn to query data and perform data manipulation, building a strong foundation for what you’ll learn throughout the rest of the course. Explore Essential Data Science Tools Manage and Analyze Data"},

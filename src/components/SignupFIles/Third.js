@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react'
+import React, { useLayoutEffect, useState,useEffect } from 'react'
 import "./../Pages/login.css"
 import { AiOutlineEyeInvisible } from "react-icons/ai"
 import { NavLink, Spinner } from 'reactstrap'
@@ -12,6 +12,10 @@ import { useNavigate } from 'react-router-dom'
 import { activatePayment } from '../../Redux/Slices/userSlice'
 
 function Third() {
+
+  useEffect(() => {
+    window.scrollTo(0, 10)
+  }, [])
 
   const navigate = useNavigate()
 

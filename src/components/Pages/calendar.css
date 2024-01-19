@@ -97,5 +97,36 @@ margin-bottom: .5rem;
      .calendar-tabs::-webkit-scrollbar{
         display: none;
      }
+
+     
+     
+}
+
+@media (max-width: 500px) {
+    .calendarhero{
+    
+        background-size: cover;
+     }
+
+     .calendar-tabs{
+        width: 100%;
+        overflow: scroll;
+     }
+
+     .calendar-tabs::-webkit-scrollbar{
+        display: none;
+     }
+
+
+     .cal{
+        /* margin:0 50px !important */
+        margin-right:50px !important
+     }
+
+     .cals{
+        /* width:500px !important; */
+        /* margin-right:40px !important */
+     }
+
      
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import classroom from "./../../assets/classroom.png"
 import "./login.css"
 import { AiOutlineEyeInvisible} from "react-icons/ai"
@@ -12,6 +12,10 @@ import axios from 'axios'
 import { toast } from 'react-toastify'
 
 function Login() {
+
+  useEffect(() => {
+    window.scrollTo(0, 10)
+  }, [])
 
   const [show, setShow] = useState(false)
 

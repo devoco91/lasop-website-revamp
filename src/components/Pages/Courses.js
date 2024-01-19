@@ -16,37 +16,51 @@ function Courses() {
           info: "Learn to create professional, responsive websites using HTML, CSS, Bootstrap, JavaScript, JQuery, React, Python, Django & SQL.",
           index: 2,
           img: "full.png",
+          slug: 'fullstackweb',
+          // slug: 'fullstack',
     
         },
         {
           title: "mobile app development",
           info: "Learn to create mobile UI designs with native frameworks or cross-platform frameworks, React Native, Flutter",
           index: 4,
-          img: "mob.png"
+          img: "mob.png",
+          slug: 'mobileappdev',
+          // slug: 'mobile'
         },
         {
           title: "frontend development",
           info: "Learn to create professional, responsive websites using HTML, CSS, Bootstrap, JavaScript, JQuery, React, & SQL.",
           index: 1,
-          img: "full.png"
+          img: "full.png",
+          // slug: 'frontend',
+          slug: 'frontendweb',
         },
         {
           title: "backend development",
           info: "Learn Python, and its framework Django. Or  Node and Express.NET if your interest is to become a Nodejs developer.",
           index: 3,
-          img: "backend.png"
+          img: "backend.png",
+          // slug: "backend",
+          slug: "backendweb",
+
         },
         {
           title: "UI/UX design",
           info: "Learn design thinking, wireframes, interactive prototyping. Earn a UX design certification to accelerate your career with cutting-edge skills.",
           index: 0,
-          img: "ui.png"
+          img: "ui.png",
+          slug: ' productdesign',
+          // slug: ' productdesign',
+         
         },
         {
           title: "Data science and AI",
           info: "Dive into prescriptive and predictive analytics, machine learning, artificial intelligence, statistical analysis, and programming languages.",
           index: 5,
-          img: "ds.png"
+          img: "ds.png",
+          slug: 'datascience',
+          // slug: 'data-science',
         },
       ]
 
@@ -70,7 +84,7 @@ function Courses() {
                   <p>{data?.info}</p>
                  <div className="align-items-center mt-3 d-flex justify-content-between">
                  <div className="border w-50 rounded px-1 border-primary d-flex p-1 align-items-center">
-                    <Link to={`/course/${data?.index}`} className='fw-bold'>learn more</Link>
+                    <Link to={`/${data?.slug}`} className='fw-bold'>learn more</Link>
                     <TbMathGreater color='#000066' />
                   </div>
 

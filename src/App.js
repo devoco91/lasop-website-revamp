@@ -20,8 +20,9 @@ const Onboard = lazy(() => import("./components/Pages/Onboard"))
 const Login = lazy(() => import("./components/Pages/Login"))
 const Hire = lazy(() => import("./components/Pages/Hire"))
 const Calendar = lazy(() => import("./components/Pages/Calendar"))
-const Faq = lazy(() => import("./components/Pages/FaqPage"))
-const FaqHome = lazy(() => import("./components/Pages/FaqPage"))
+const Faqs = lazy(() => import("./components/Pages/FaqPage"))
+const Faq = lazy(() => import("./components/common/Faq"))
+
 const NotFound = lazy(() => import("./components/Pages/NotFound"))
 const About = lazy(() => import("./components/Pages/About"))
 const Contact = lazy(() => import("./components/Pages/Contact"))
@@ -32,13 +33,14 @@ const Dashboard = lazy(() => import("./components/Dashboard/Layout"))
 
 
 
+
 function App() {
   
   const token = useSelector((state) => state?.user?.token)
 
   const [blogData, setBlogData] = useState([])
 
-  
+   
 
   useLayoutEffect(() =>{
 
@@ -83,13 +85,16 @@ function App() {
           <Route path="/hire" element={ <Hire/> }/>
           <Route path="/courses" element={ <Courses/> }/>
           <Route path="/calendar" element={ <Calendar/> }/>
-          <Route path="/faq" element={ <Faq/> }/>
-          <Route path="/faqs" element={ <FaqHome/> }/>
+          <Route path="/faq" element={ <Faqs/> }/>
+          
           <Route path="/contact" element={ <Contact/> }/>
+         
+
           <Route path="/about" element={ <About blogdata={blogData}/> }/>
           <Route path="/blog" element={ <Blog blogdata={blogData}/> }/>
           <Route path="/blog/:id" element={<Blogdetails data={blogData}/>}/>
-          <Route path="/course/:id" element={<Course/>}/>
+          <Route path="/:id" element={<Course/>}/>
+          {/* <Route path="/:id" element={<Course/>}/> */}
           <Route path="/dashboard/:text/?" element={<Dashboard/>}/>
         </Routes>
 
@@ -104,5 +109,6 @@ function App() {
     </Suspense>
   );
 }
+
 
 export default App;

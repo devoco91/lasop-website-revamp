@@ -6,39 +6,40 @@ import user20 from "./../../assets/las23.jpeg"
 import user3 from "./../../assets/user3.png"
 import user4 from "./../../assets/user4.png"
 import doubleline from "./../../assets/double.png"
-import Video from '../common/Video'
-import Blogcard from '../common/Blogcard'
 import { FaArrowRight } from 'react-icons/fa'
 import Footer from "../footerfiles/Footer"
 import { Link } from 'react-router-dom'
 import CallToAction from "./../common/CallToAction"
+const About1= lazy(()=> import("../About1"))
+const About2= lazy(()=> import("../About2"))
+const About3= lazy(()=> import("../About3"))
+const About4= lazy(()=> import("../About4"))
+const About5= lazy(()=> import("../About5"))
+const Video= lazy(()=> import("../common/Video"))
+const Blogcard= lazy(()=> import("../common/Blogcard"))
 
 function About({blogdata}) {
+
+
+    useEffect(() => {
+        window.scrollTo(0, 10)
+      }, [])
 
     let pagedata = blogdata?.slice(0,3)
 
     return (
         <div className="about">
             <Navbar />
+            <Suspense fallback={<div>Loading...</div>}>
             <div className="background p-5">
                 <div className="container p-md-5">
                     <div className="row align-items-center ">
                         <div className="col-md-6">
 
-                            <img className='doubleline ourmission' src="./../../../images/ourmission.png" alt="" />
-                            <p className='h6'>
-                                Our mission is to provide every student with a platform to refine his or her
-                                skills and make a mark in the computer literate world.
-                                To sharpen their skills to master new technologies and
-                                establish themselves with the goal of Bringing People and Computers Together Successfully, and to meet the augmenting needs
-                                of the technology-driven global society.recognized Model Computer Programming Institute in
-                                the World in meeting the prevailing needs of technical manpower through qualitative, effective and resourceful training.
-                            </p>
+                           <About1/>
                         </div>
                         <div className="col-md-6 position-relative ">
-                            <img src={user3} alt="" className='img-fluid img-thumbnail d-block temi' />
-                            <img src={user4} alt="" className='img-fluid img-thumbnail d-block' />
-                            <img src={user2} alt="" className='img-fluid img-thumbnail d-block' />
+                        <About2/>
                         </div>
                     </div>
                 </div>
@@ -49,19 +50,15 @@ function About({blogdata}) {
                 <div className="row justify-content-between align-items-center">
                     <div className="col-md-5 position-relative mx-3 mx-md-0">
 
-                        <img src={user3} alt="" className='img-fluid img-thumbnail d-block' />
-                        <img src={user4} alt="" className='img-fluid img-thumbnail d-block' />
-                        <img src={user20} alt="" className='img-fluid img-thumbnail d-block' />
+                       <About3/>
 
                     </div>
 
                     <div className="col-md-2">
-                        <img className='d-block m-auto aboutline' src={doubleline} alt="" />
+                       <About4/>
                     </div>
                     <div className="col-md-5 left">
-                        <h5 className='h5 fw-bold '>Our Philosophy</h5>
-                        <p className='p'>Our mission is to provide every student with a platform to refine his or her skills and make a mark in the computer literate world. To sharpen their skills to master new technologies and establish themselves with the goal of Bringing People and Computers Together Successfully, and to meet the augmenting needs of the technology-driven global society.
-                            LASOP looks forward to be a recognized Model Computer Programming Institute in the World in meeting the prevailing needs of technical manpower through qualitative, effective and resourceful training.</p>
+                       <About5/>
 
                     </div>
                 </div>
@@ -130,6 +127,7 @@ function About({blogdata}) {
             </div>
             {/* <CallToAction/> */}
             {/* <Footer/> */}
+            </Suspense>
         </div>
 
 

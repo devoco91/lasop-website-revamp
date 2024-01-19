@@ -21,6 +21,8 @@
             bottom: 1rem;
         
             flex-direction: column;
-        left: 0;
+        left: -200 px;
+        margin-top:30px !important;
+        display:inline !important
     }
 }
