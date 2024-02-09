@@ -38,6 +38,8 @@ function Navbar() {
   const toggle2 = () => setDropdownOpen2((prevState) => !prevState);
 
 
+
+  
   // useLayoutEffect(() => {
 
   //   axios.get(`${process.env.REACT_APP_API_URL}/profile`, {
@@ -132,7 +134,8 @@ function Navbar() {
                     }
                       <DropdownItem > <Link className='nav-link' to={`/dashboard/${user?.info?.role === "admin" ? "home" : "syllabus"}`}>Dashboard</Link> </DropdownItem>
                       <DropdownItem >
-                        <button  className="btn m-auto  w-100 btn-sm btn-outline-danger">Logout</button>
+                        <button 
+                         className="btn m-auto  w-100 btn-sm btn-outline-danger">Logout</button>
                       </DropdownItem>
 
                     </DropdownMenu>
@@ -153,6 +156,7 @@ function Navbar() {
               <Link to="/signup" className="btn btn-primary">Get Started</Link>
               <Link to="/hire" className="btn btn-outline-primary">Hire</Link>
             </div>
+            
 
           </div>
         </div>

@@ -21,8 +21,7 @@ function Calendar() {
         <div className="row align-items-center">
             <div className='col-md-6 col-12'>
                 <h2 className="h2"> Academic Calendar </h2>
-                <p className='p'>This calendar is updated every month to keep you well informed and ahead.
-                    Last updated: July 8th, 2022.</p>
+                <p className='p'>This calendar is updated every month to keep you well informed and ahead.</p>
                 <div className='info-btn container-fluid'>
                     <p>Center Codes:</p>
                     <div className="row align-items-center">

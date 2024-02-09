@@ -68,7 +68,7 @@ const login = async (req, res) => {
 
             if (email === "" || password === "") {
                 
-                res.status(400).json('please add all field')
+                res.status(400).json('please fill up all fields')
 
             } else {
                 let sql = "SELECT * FROM users WHERE email = ?"
@@ -92,6 +92,7 @@ const login = async (req, res) => {
                             .then( async(confirm) => {
                                 if (confirm) {
 
+                                    
                                     let token = await jwt?.sign({ id: data?.id, email: data?.email }, process.env.JWT_SECRET, {
                                         expiresIn: '30d'//may change time later
                                     })
